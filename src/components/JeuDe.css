@@ -1,0 +1,47 @@
+
+.jeu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ead2d2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  }
+  
+  .de-image {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+  }
+  
+  .message-victoire {
+    color: #378a79;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+   
+  .titre {
+    color: rgb(148, 21, 116); 
+    font-size: 30px; 
+    font-weight: bold; 
+    font-family: 'Comic Sans MS', sans-serif; 
+}
+
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate {
+    animation: rotate 0.5s ease;
+  }
+  
