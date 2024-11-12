@@ -9,14 +9,14 @@ class JeuDe extends React.Component {
       compteur: 0, 
       fin: false, 
       rotate: false,
-      cache: Math.floor(Math.random() * 6) + 1 // تعيين الوجه المخفي بشكل عشوائي
+      cache: Math.floor(Math.random() * 6) + 1 
     };
   }
 
   jouer() {
     const valeur = Math.floor(Math.random() * 6) + 1;
 
-    // تفعيل الدوران
+    
     this.setState({ rotate: true });
     setTimeout(() => {
       this.setState({ rotate: false });
@@ -25,7 +25,7 @@ class JeuDe extends React.Component {
     this.setState((prevState) => ({
       face: valeur,
       compteur: prevState.compteur + 1,
-      fin: valeur === prevState.cache, // التحقق من تطابق الوجه مع الوجه المخفي
+      fin: valeur === prevState.cache, 
     }));
   }
 
@@ -34,12 +34,12 @@ class JeuDe extends React.Component {
   }
 
   initialiser() {
-    // إعادة تعيين اللعبة وتعيين وجه مخفي جديد عشوائي
+   
     this.setState({ 
       face: null, 
       compteur: 0, 
       fin: false,
-      cache: Math.floor(Math.random() * 6) + 1 // تعيين الوجه المخفي بشكل عشوائي
+      cache: Math.floor(Math.random() * 6) + 1 
     });
   }
 
